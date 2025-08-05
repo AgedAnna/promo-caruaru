@@ -1,0 +1,45 @@
+/* Dharma Gothic Bold */
+@font-face {
+  font-family: "Dharma Gothic";
+  src: url("/volta-pra-casa/fonts/dharma/DharmaGothicE-ExBold.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("/volta-pra-casa/fonts/exo/Exo2-Italic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("/volta-pra-casa/fonts/exo/Exo2-Bold.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("/volta-pra-casa/fonts/exo/Exo2-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  font-family: "Dharma Gothic", sans-serif;
+  --foreground: #000000;
+}
+
+body {
+  color: var(--foreground);
+  font-family: "Dharma Gothic", sans-serif !important;
+  font-family: "Exo", Arial, Helvetica, sans-serif !important;
+  margin: 0 !important;
+}

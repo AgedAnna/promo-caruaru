@@ -1,0 +1,235 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #151012;
+  color: #fff;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.header img {
+  width: 100%;
+  max-width: 240px;
+  height: auto !important;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+.main img {
+  width: 100%;
+  max-width: 420px;
+  height: auto !important;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 18px auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0 0 0;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  z-index: 1;
+}
+
+.title {
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  font-family: "Baloo 2", cursive;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.title span {
+  color: #fe5500;
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.7rem);
+  color: #ffede6;
+  margin-bottom: 24px;
+  margin-top: 44px;
+}
+
+.button {
+  background: #fe5500;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  padding: 16px 38px;
+  border-radius: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 24px #fe550088;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #ff7300;
+}
+
+.bonus {
+  font-size: clamp(1.2rem, 4vw, 2.4rem);
+  color: #ffede6;
+  padding: 12px 0;
+  border-top: 2px dashed #fe5500;
+  border-bottom: 2px dashed #fe5500;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  z-index: 2;
+}
+
+.moon {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 200px;
+  height: auto;
+  z-index: 1;
+}
+
+.airplane {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  width: 320px;
+  height: auto;
+  z-index: 2;
+}
+
+.city {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 380px;
+  height: auto;
+  z-index: 1;
+}
+
+.woman {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  width: 340px;
+  height: auto;
+  z-index: 1;
+}
+
+.lottieWaveFooter {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  z-index: 20;
+  pointer-events: none;
+  overflow: hidden;
+  line-height: 0;
+}
+
+@media (max-width: 1473px) {
+  .bonus {
+    margin-top: 30px;
+    margin-bottom: 119px;
+    padding: 5;
+    text-align: center;
+  }
+
+  .moon {
+    top: 14px;
+    left: 2px;
+    width: 176px;
+  }
+
+  .airplane {
+    top: 45px;
+    width: 170px;
+  }
+
+  .city {
+    width: 200px;
+  }
+
+  .woman {
+    width: 180px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .title span {
+    font-size: 2.2rem;
+  }
+
+  .main {
+    gap: 10px;
+  }
+}
+
+.voltaPraCasaImg {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  padding-left: 24px;
+  padding-right: 24px !important;
+  height: auto;
+  object-fit: contain;
+  z-index: 9;
+  margin-top: 74px !important;
+}
+
+/* Responsivo para mobile */
+@media (max-width: 710px) {
+  .voltaPraCasaImg {
+    max-width: 95vw;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 74px;
+  }
+
+  .bonus {
+    margin-top: 30px;
+    margin-bottom: 119px;
+    padding: 5;
+    text-align: center;
+  }
+
+  .moon {
+    top: 14px;
+    left: 2px;
+    width: 56px;
+  }
+
+  .airplane {
+    top: 45px;
+    width: 70px;
+  }
+  .city {
+    width: 100px;
+  }
+  .woman {
+    width: 80px;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .title span {
+    font-size: 2.2rem;
+  }
+  .main {
+    gap: 10px;
+  }
+}

@@ -29,7 +29,7 @@ const History = () => {
         <span>
           Não foi pouca, tá? Quando a Aposta Ganha chegou em Caruaru, foi pra
           somar, <br />
-          dar orgulho ao nosso provo e fazer bonito!
+          dar orgulho ao nosso povo e fazer bonito!
         </span>
       </div>
     </div>

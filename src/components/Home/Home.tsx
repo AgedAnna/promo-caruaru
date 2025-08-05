@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import styles from "./Home.module.css";
+import Wave from "react-wavify";
 
 const logo = "/volta-pra-casa/assets/logos/logo.png";
 const moon = "/volta-pra-casa/assets/img/moon.png";
@@ -14,12 +15,6 @@ const volta_pra_casa = "/volta-pra-casa/assets/logos/volta_pra_casa.png";
 
 const HomePage = () => {
   const containerRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"],
-  });
-
-  const waveY = useTransform(scrollYProgress, [0, 1], [0, -80]);
 
   return (
     <div ref={containerRef} className={styles.container}>
@@ -79,18 +74,52 @@ const HomePage = () => {
         />
 
         <p className={styles.subtitle}>
-          Oia, a cidade tá sentindo tua falta, visse? A Aposta Ganha também.
+          Oia, a cidade tá sentindo tua falta, visse? <br />A Aposta Ganha
+          também.
           <br />
           Bora chegar junto de novo e fazer parte desse movimento
           <br />
           que bota Caruaru no topo?
         </p>
-        <button className={styles.button}>Voltar pra casa</button>
+        <button className={styles.button}>VOLTAR PRA CASA</button>
         <div className={styles.bonus}>
           <strong>GANHE 50 RODADAS GRÁTIS</strong> NO JOGO DO <br />
           RATINHO SORTUDO APOSTANDO SÓ R$1,00!
         </div>
       </main>
+      <div className={styles.waveBottom}>
+        <Wave
+          fill="#FE5500"
+          paused={false}
+          options={{
+            height: 35,
+            amplitude: 8,
+            speed: 0.35,
+            points: 30,
+          }}
+          style={{
+            width: "100vw",
+            minWidth: "100vw",
+            height: "60px",
+          }}
+        />
+        <Wave
+          fill="#FE5500"
+          paused={false}
+          options={{
+            height: 35,
+            amplitude: 8,
+            speed: 0.4,
+            points: 30,
+          }}
+          style={{
+            width: "100vw",
+            minWidth: "100vw",
+            height: "60px",
+            transform: "rotate(180deg)", // inverte para o rodapé
+          }}
+        />
+      </div>
     </div>
   );
 };

@@ -48,8 +48,8 @@ const TermsModal: React.FC = () => {
                 <p>
                   <strong>Elegibilidade</strong>
                   <br />
-                  1.1. A promoção intitulada "Joga junto com a AG’’ é destinada
-                  exclusivamente a clientes devidamente cadastrados na
+                  1.1. A promoção intitulada &quot;Joga junto com a AG’’ é
+                  destinada exclusivamente a clientes devidamente cadastrados na
                   plataforma ApostaGanha.bet.br, desde que cumpram todos os
                   requisitos estabelecidos neste regulamento.
                   <br />

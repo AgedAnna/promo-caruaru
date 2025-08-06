@@ -17,9 +17,12 @@ const Points = () => {
   const startX = useRef<number | null>(null);
   const threshold = 40;
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   function onTouchStart(e: any) {
     startX.current = e.touches ? e.touches[0].clientX : e.clientX;
   }
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   function onTouchEnd(e: any) {
     const endX = e.changedTouches ? e.changedTouches[0].clientX : e.clientX;
     if (startX.current !== null) {

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import styles from "./Ticktes.module.css";
 import { motion } from "motion/react";
+import TermsModal from "../TermsModal/TermsModal";
 
 const floatingAssets = [
   {
@@ -107,6 +108,7 @@ const Ticktes = () => {
             RESGATAR MINHAS RODADAS AGORA
           </button>
         </div>
+        <TermsModal />
       </div>
     </>
   );

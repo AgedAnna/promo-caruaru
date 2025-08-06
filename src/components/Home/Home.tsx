@@ -5,6 +5,7 @@ import { useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import styles from "./Home.module.css";
 import Wave from "react-wavify";
+import TermsModal from "../TermsModal/TermsModal";
 
 const logo = "/volta-pra-casa/assets/logos/logo.png";
 const moon = "/volta-pra-casa/assets/img/moon.png";
@@ -82,6 +83,7 @@ const HomePage = () => {
           que bota Caruaru no topo?
         </p>
         <button className={styles.button}>VOLTAR PRA CASA</button>
+        <TermsModal />
         <div className={styles.bonus}>
           <strong>GANHE 50 RODADAS GRÁTIS</strong> NO JOGO DO <br />
           RATINHO SORTUDO APOSTANDO SÓ R$1,00!

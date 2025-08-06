@@ -8,6 +8,7 @@ import { pontos } from "@/utils/pontos";
 import Wave from "react-wavify";
 
 const moldura_pontos = "/volta-pra-casa/assets/img/moldura_pontos.png";
+const arrow = "/volta-pra-casa/assets/img/setinha.png";
 
 const Points = () => {
   const isMobile = useMediaQuery("(max-width: 700px)");
@@ -81,39 +82,77 @@ const Points = () => {
             ))}
           </div>
         ) : (
-          <div
-            className={styles.swipeWrapper}
-            onTouchStart={onTouchStart}
-            onTouchEnd={onTouchEnd}
-            onMouseDown={onTouchStart}
-            onMouseUp={onTouchEnd}
-          >
-            <div className={styles.card}>
-              <div className={styles.imgBox}>
-                <Image
-                  src={pontos[current].img}
-                  alt="imgPonto"
-                  fill
-                  className={styles.imgPonto}
-                />
-              </div>
-              <div className={styles.molduraBox}>
-                <Image
-                  src={moldura_pontos}
-                  alt="moldura_pontos"
-                  width={320}
-                  height={140}
-                  className={styles.imgMoldura}
-                  draggable={false}
-                />
+          <>
+            <div
+              className={styles.swipeWrapper}
+              onTouchStart={onTouchStart}
+              onTouchEnd={onTouchEnd}
+              onMouseDown={onTouchStart}
+              onMouseUp={onTouchEnd}
+            >
+              <button
+                className={`${styles.arrowMobile} ${styles.arrowLeft}`}
+                aria-label="Anterior"
+                onClick={goPrev}
+                disabled={current === 0}
+                type="button"
+              >
+                {current !== 0 && (
+                  <Image
+                    src={arrow}
+                    alt="anterior"
+                    width={32}
+                    height={32}
+                    style={{ transform: "scaleX(-1)" }}
+                    draggable={false}
+                  />
+                )}
+              </button>
 
-                <span
-                  className={styles.description}
-                  dangerouslySetInnerHTML={{
-                    __html: pontos[current].description,
-                  }}
-                />
+              <div className={styles.card}>
+                <div className={styles.imgBox}>
+                  <Image
+                    src={pontos[current].img}
+                    alt="imgPonto"
+                    fill
+                    className={styles.imgPonto}
+                  />
+                </div>
+                <div className={styles.molduraBox}>
+                  <Image
+                    src={moldura_pontos}
+                    alt="moldura_pontos"
+                    width={320}
+                    height={140}
+                    className={styles.imgMoldura}
+                    draggable={false}
+                  />
+                  <span
+                    className={styles.description}
+                    dangerouslySetInnerHTML={{
+                      __html: pontos[current].description,
+                    }}
+                  />
+                </div>
               </div>
+
+              <button
+                className={`${styles.arrowMobile} ${styles.arrowRight}`}
+                aria-label="Próximo"
+                onClick={goNext}
+                disabled={current === pontos.length - 1}
+                type="button"
+              >
+                {current !== pontos.length - 1 && (
+                  <Image
+                    src={arrow}
+                    alt="próximo"
+                    width={32}
+                    height={32}
+                    draggable={false}
+                  />
+                )}
+              </button>
             </div>
             <div className={styles.dots}>
               {pontos.map((_, idx) => (
@@ -126,7 +165,7 @@ const Points = () => {
                 />
               ))}
             </div>
-          </div>
+          </>
         )}
         <div className={styles.waveBottom}>
           <Wave

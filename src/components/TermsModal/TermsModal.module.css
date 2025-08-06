@@ -1,0 +1,69 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999 !important;
+}
+
+.modal {
+  background: #fff;
+  color: #000;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80%;
+  overflow-y: auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: 2001 !important;
+  font-size: 1rem;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 3rem;
+  color: #fe5500;
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  color: #fe5500;
+  margin: 0 0 1rem;
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+.link {
+  color: #fff;
+  margin-top: 1.5rem;
+  text-align: center;
+  display: block;
+  font-size: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: "Exo" !important;
+}
+
+.link:hover {
+  color: #fe5500;
+}
+
+.content {
+  margin-top: 1.5rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-family: "Exo" !important;
+  text-align: left;
+}

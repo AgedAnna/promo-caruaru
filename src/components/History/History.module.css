@@ -9,6 +9,7 @@
   background: transparent;
   box-sizing: border-box;
   background-color: antiquewhite;
+  overflow-x: hidden !important;
 }
 
 .container > div {
@@ -18,7 +19,7 @@
 }
 
 .containerImg {
-  margin-top: -52vh;
+  margin-top: 10vh;
 }
 
 .moon {
@@ -53,12 +54,72 @@
   overflow-wrap: break-word;
 }
 
-/* Mobile: ajusta o tamanho da imagem e fontes */
-@media (max-width: 700px) {
-  .containerImg {
-    margin-top: -12vh;
-  }
+.cardsWrapper {
+  position: relative;
+  width: 100%;
+  min-height: 330px; /* ou ajuste conforme a base */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
 
+.baseFotos {
+  /* position: absolute !important; */
+  top: 0;
+  left: 50%;
+  width: 90%;
+  height: 100%;
+  z-index: 1;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.cardContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  width: 53%;
+  min-height: 330px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+
+.description {
+  font-size: 1.7rem;
+  color: #1c1c1c;
+  line-height: 1.2;
+  font-weight: 400;
+  max-width: 380px;
+}
+
+.right {
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 440px;
+}
+
+.cardImg {
+  top: 16px;
+  left: 22px;
+  width: 276px;
+  height: 170px;
+  z-index: 8;
+  overflow: hidden;
+}
+
+.cardImage {
+  position: relative !important;
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+@media (max-width: 700px) {
   .moon {
     max-width: 250px;
   }
@@ -73,5 +134,101 @@
   .container {
     min-height: 60vh;
     padding: 0 6px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cardContent {
+    width: 80%;
+    padding: 1.5rem 1.5rem;
+    min-height: 260px;
+  }
+  .left {
+    max-width: 48vw;
+  }
+  .right {
+    min-width: 200px;
+  }
+  .molduraBox {
+    width: 220px;
+    height: 150px;
+  }
+  .cardImg {
+    width: 175px;
+    height: 96px;
+    left: 14px;
+    top: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  .containerImg {
+    margin-top: 6vh;
+  }
+
+  .cardsWrapper {
+    min-height: 210px;
+    margin-top: -8vh;
+  }
+
+  .cardContent {
+    flex-direction: column;
+    width: 65vw;
+    min-height: 0;
+    padding: 1rem 0.3rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+  }
+
+  .left {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 1.05rem;
+    max-width: 97vw;
+  }
+
+  .right {
+    min-width: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .molduraBox {
+    width: 90vw;
+    max-width: 340px;
+    height: 110px;
+  }
+  .moldura {
+    border-radius: 13px;
+  }
+  .cardImg {
+    width: 75vw;
+    max-width: 260px;
+    height: 68px;
+    left: 8vw;
+    top: 13px;
+    border-radius: 13px;
+  }
+}
+
+/* Microcelulares */
+@media (max-width: 420px) {
+  .molduraBox {
+    height: 80px;
+    width: 94vw;
+    min-width: 120px;
+    max-width: 94vw;
+  }
+  .cardImg {
+    height: 41px;
+    width: 67vw;
+    left: 14vw;
+    top: 10px;
   }
 }

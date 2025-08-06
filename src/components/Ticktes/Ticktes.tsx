@@ -65,7 +65,8 @@ const Ticktes = () => {
             width: asset.size,
           };
           const cornerClass = asset.corner
-            ? (styles as any)[`corner_${asset.corner}`]
+            ? // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              (styles as any)[`corner_${asset.corner}`]
             : "";
           return (
             <motion.img

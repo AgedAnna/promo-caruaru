@@ -4,6 +4,7 @@ import History from "@/components/History/History";
 import Points from "@/components/Points/Points";
 import Footer from "@/components/Fotter/Footer";
 import FooterPersonalite from "@/components/FooterPersonalite/FooterPersonalite";
+import Ticktes from "@/components/Ticktes/Ticktes";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         <HomePage />
         <History />
         <Points />
-
+        <Ticktes />
         <FooterPersonalite />
         <Footer />
       </main>

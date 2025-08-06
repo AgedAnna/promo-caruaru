@@ -2,7 +2,7 @@ export const cards = [
   {
     img: "/volta-pra-casa/assets/img/img_com_moldura.png",
     description:
-      "Patrocinador Master do São João de Caruaru por 4 anos seguidos.",
+      "Patrocinador Master do São João de Caruaru <b>por 4 anos seguidos</b>.",
   },
   {
     img: "/volta-pra-casa/assets/img/img_com_moldura.png",

@@ -11,7 +11,7 @@ const arrow = "/volta-pra-casa/assets/img/setinha.png";
 const base_fotos = "/volta-pra-casa/assets/img/base_fotos.png";
 
 const History = () => {
-  const isMobile = useMediaQuery("(max-width: 700px)");
+  const isMobile = useMediaQuery("(max-width: 800px)");
   const [current, setCurrent] = useState(0);
 
   // --- Swipe logic ---
@@ -106,9 +106,12 @@ const History = () => {
           <div className={styles.cardContent}>
             {!isMobile && (
               <div className={styles.left}>
-                <span className={styles.description}>
-                  {cards[current].description}
-                </span>
+                <span
+                  className={styles.description}
+                  dangerouslySetInnerHTML={{
+                    __html: cards[current].description,
+                  }}
+                />
               </div>
             )}
 
@@ -125,9 +128,12 @@ const History = () => {
 
             {isMobile && (
               <div className={styles.left}>
-                <span className={styles.description} style={{ paddingTop: 80 }}>
-                  {cards[current].description}
-                </span>
+                <span
+                  className={styles.description}
+                  dangerouslySetInnerHTML={{
+                    __html: cards[current].description,
+                  }}
+                />
               </div>
             )}
           </div>

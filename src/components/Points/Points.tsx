@@ -139,8 +139,8 @@ const Points = () => {
               points: 30,
             }}
             style={{
-              width: "100vw",
-              minWidth: "100vw",
+              width: "100%",
+              minWidth: "unset",
               height: "60px",
             }}
           />
@@ -154,8 +154,8 @@ const Points = () => {
               points: 30,
             }}
             style={{
-              width: "100vw",
-              minWidth: "100vw",
+              width: "100%",
+              minWidth: "unset",
               height: "60px",
               transform: "rotate(180deg)",
             }}

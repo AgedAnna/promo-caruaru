@@ -1,0 +1,100 @@
+.wrapper {
+  color: #ebebeb;
+  font-family: "Exo", sans-serif;
+  background-color: black;
+}
+
+.inner {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  font-family: "Exo", sans-serif !important;
+}
+
+.logo {
+  width: 111px;
+}
+
+.badge {
+  width: 244px;
+}
+
+.socialContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Exo", sans-serif !important;
+}
+
+.socialText {
+  font-size: 0.875rem;
+  color: #ebebeb;
+  font-family: "Exo", sans-serif !important;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 40;
+}
+
+.icons a img {
+  width: 30px;
+  margin: 0 0.5rem;
+}
+
+.legal p {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: #ebebeb;
+  font-family: "Exo", sans-serif !important;
+  padding: 2rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  font-family: "Exo", sans-serif !important;
+}
+
+.links a {
+  font-size: 0.875rem;
+  color: #ebebeb;
+  text-decoration: none;
+  font-family: "Exo", sans-serif !important;
+}
+
+.copy p {
+  font-size: 0.75rem;
+  color: #ebebeb;
+  font-family: "Exo", sans-serif !important;
+  padding: 2rem;
+}
+
+.copy a {
+  color: #ebebeb;
+  text-decoration: underline;
+  font-family: "Exo", sans-serif !important;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    background-size: 100% 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    padding-bottom: 0;
+  }
+}

@@ -1,16 +1,20 @@
-.page,
+.page {
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #000;
+  position: relative;
+}
+
 .main {
   width: 100%;
   max-width: 100vw;
-  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   position: relative;
   background-color: #000;
-}
-
-.page {
-  position: relative;
-  min-height: 100vh;
 }
 
 .agegate__overlay {
@@ -61,7 +65,7 @@
   background-color: #fe5500;
   color: #fff;
   transition: background-color 0.2s;
-  font-family: "Dharma Gothic" !important;
+  font-family: "Dharma Gothic", sans-serif !important;
 }
 
 .agegate__btn:hover {

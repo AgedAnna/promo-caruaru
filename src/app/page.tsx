@@ -9,25 +9,6 @@ import FooterPersonalite from "@/components/FooterPersonalite/FooterPersonalite"
 import Ticktes from "@/components/Ticktes/Ticktes";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-
-const sectionVariants = {
-  hidden: { opacity: 0.4, y: 64 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.55, ease: "easeOut" },
-  },
-};
-
-const slideLeftVariants = {
-  hidden: { opacity: 0.4, x: -120 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.65, ease: "easeOut" },
-  },
-};
 
 const slideZoomVariants = {
   hidden: { opacity: 0, y: 72, scale: 0.98 },
@@ -52,7 +33,7 @@ export default function Home() {
         <main className={styles.main}>
           <motion.div
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            variants={sectionVariants as any}
+            variants={slideZoomVariants as any}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.25 }}

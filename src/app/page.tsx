@@ -8,17 +8,6 @@ import Footer from "@/components/Fotter/Footer";
 import FooterPersonalite from "@/components/FooterPersonalite/FooterPersonalite";
 import Ticktes from "@/components/Ticktes/Ticktes";
 import { useState } from "react";
-import { motion } from "framer-motion";
-
-const slideZoomVariants = {
-  hidden: { opacity: 0, y: 72, scale: 0.98 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: { duration: 0.7, ease: "easeOut" },
-  },
-};
 
 export default function Home() {
   const [ageChecked, setAgeChecked] = useState(false);
@@ -31,60 +20,12 @@ export default function Home() {
     <>
       <div className={styles.page}>
         <main className={styles.main}>
-          <motion.div
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            variants={slideZoomVariants as any}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.25 }}
-          >
-            <HomePage />
-          </motion.div>
-          <motion.div
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            variants={slideZoomVariants as any}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.25 }}
-          >
-            <History />
-          </motion.div>
-          <motion.div
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            variants={slideZoomVariants as any}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.25 }}
-          >
-            <Points />
-          </motion.div>
-          <motion.div
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            variants={slideZoomVariants as any}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.25 }}
-          >
-            <Ticktes />
-          </motion.div>
-          <motion.div
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            variants={slideZoomVariants as any}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.25 }}
-          >
-            <FooterPersonalite />
-          </motion.div>
-          <motion.div
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            variants={slideZoomVariants as any}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.25 }}
-          >
-            <Footer />
-          </motion.div>
+          <HomePage />
+          <History />
+          <Points />
+          <Ticktes />
+          <FooterPersonalite />
+          <Footer />
         </main>
       </div>
 

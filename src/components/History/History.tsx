@@ -15,15 +15,13 @@ const History = () => {
   const [current, setCurrent] = useState(0);
 
   // --- Swipe logic ---
-  const startX = useRef(null);
+  const startX = useRef<number | null>(null);
   const threshold = 40; // mínimo para contar swipe
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   function onTouchStart(e: any) {
     startX.current = e.touches ? e.touches[0].clientX : e.clientX;
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   function onTouchEnd(e: any) {
     const endX = e.changedTouches ? e.changedTouches[0].clientX : e.clientX;
     if (startX.current !== null) {
@@ -68,22 +66,19 @@ const History = () => {
       <div className={styles.sliderWrapper}>
         {/* Setinha esquerda */}
         <button
-          className={styles.arrow}
+          className={`${styles.arrow} ${styles.arrowLeft}`}
           onClick={goPrev}
           aria-label="Anterior"
           type="button"
         >
-          <span className={styles.arrowIconLeft}>
-            {current > 0 && (
-              <Image
-                src={arrow}
-                alt="seta para a esquerda"
-                fill={false}
-                width={32}
-                height={32}
-              />
-            )}
-          </span>
+          {current > 0 && (
+            <Image
+              src={arrow}
+              alt="seta para a esquerda"
+              width={32}
+              height={32}
+            />
+          )}
         </button>
 
         {/* CARD com swipe */}
@@ -141,22 +136,19 @@ const History = () => {
 
         {/* Setinha direita */}
         <button
-          className={styles.arrow}
+          className={`${styles.arrow} ${styles.arrowRight}`}
           onClick={goNext}
           aria-label="Próximo"
           type="button"
         >
-          <span className={styles.arrowIconRight}>
-            {current < cards.length - 1 && (
-              <Image
-                src={arrow}
-                alt="seta para a direita"
-                fill={false}
-                width={32}
-                height={32}
-              />
-            )}
-          </span>
+          {current < cards.length - 1 && (
+            <Image
+              src={arrow}
+              alt="seta para a direita"
+              width={32}
+              height={32}
+            />
+          )}
         </button>
       </div>
 

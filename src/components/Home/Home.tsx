@@ -6,6 +6,7 @@ import { useRef } from "react";
 import styles from "./Home.module.css";
 import Wave from "react-wavify";
 import TermsModal from "../TermsModal/TermsModal";
+import { gtmClickButton } from "@/lib/gtm";
 
 const logo = "/volta-pra-casa/assets/logos/logo.png";
 const moon = "/volta-pra-casa/assets/img/moon.png";
@@ -82,7 +83,15 @@ const HomePage = () => {
           <br />
           que bota Caruaru no topo?
         </p>
-        <button className={styles.button}>VOLTAR PRA CASA</button>
+        <button
+          className={styles.button}
+          onClick={() => {
+            gtmClickButton("VOLTA PRA CASA", "cta");
+            window.location.href = "https://apostaganha.me/VOLTAR-PRA-CASA";
+          }}
+        >
+          VOLTAR PRA CASA
+        </button>
         <TermsModal />
         <div className={styles.bonus}>
           <strong>GANHE 50 RODADAS GRÁTIS</strong> NO JOGO DO <br />

@@ -14,19 +14,68 @@ export const cards = [
     description:
       "Patrocinador Master do São João de Caruaru <b>por 4 anos seguidos</b>.",
   },
+
   {
-    img: "/volta-pra-casa/assets/img/luva_trio.png",
+    img: "/volta-pra-casa/assets/img/mariana.png",
     description:
-      "Patrocinador Master do São João de Caruaru <b>por 4 anos seguidos</b>.",
+      "Trouxe gente famosa para nossa terra:<b> Marina Ruy Barbosa, Luva de Pedreiro, Chupala </b>e mais.",
+  },
+  {
+    img: "/volta-pra-casa/assets/img/luva_chulapa.png",
+    description:
+      "Trouxe gente famosa para nossa terra:<b> Marina Ruy Barbosa, Luva de Pedreiro, Chupala </b>e mais.",
+  },
+  {
+    img: "/volta-pra-casa/assets/img/chulepa.png",
+    description:
+      "Trouxe gente famosa para nossa terra:<b> Marina Ruy Barbosa, Luva de Pedreiro, Chupala </b>e mais.",
+  },
+
+  {
+    img: "/volta-pra-casa/assets/img/mascote.png",
+    description:
+      "Fez as Drilhas voltarem a sacudir a <b>Av. Agamenon</b>, depois de mais de 10 anos!",
   },
   {
     img: "/volta-pra-casa/assets/img/trio_ag.png",
     description:
-      "Patrocinador Master do São João de Caruaru <b>por 4 anos seguidos</b>.",
+      "Fez as Drilhas voltarem a sacudir a <b>Av. Agamenon</b>, depois de mais de 10 anos!",
   },
   {
-    img: "/volta-pra-casa/assets/img/mascote.png",
+    img: "/volta-pra-casa/assets/img/luva_trio.png",
     description:
-      "Patrocinador Master do São João de Caruaru <b>por 4 anos seguidos</b>.",
+      "Fez as Drilhas voltarem a sacudir a <b>Av. Agamenon</b>, depois de mais de 10 anos!",
+  },
+
+  {
+    img: "/volta-pra-casa/assets/img/jogo_1.png",
+    description:
+      "Fortaleceu o nosso futebol: <b>Central e Porto com patrocínio master</b>.",
+  },
+  {
+    img: "/volta-pra-casa/assets/img/jogo_2.png",
+    description:
+      "Fortaleceu o nosso futebol: <b>Central e Porto com patrocínio master</b>.",
+  },
+  {
+    img: "/volta-pra-casa/assets/img/jogo_3.png",
+    description:
+      "Fortaleceu o nosso futebol: <b>Central e Porto com patrocínio master</b>.",
+  },
+
+  {
+    img: "/volta-pra-casa/assets/img/carnaval_1.png",
+    description:
+      "Foi presença forte no <b>Carnaval da Sucata, MotoFest e Gonzagäo</b>.",
+  },
+  {
+    img: "/volta-pra-casa/assets/img/carnaval_2.png",
+    description:
+      "Foi presença forte no <b>Carnaval da Sucata, MotoFest e Gonzagäo</b>.",
+  },
+  {
+    img: "/volta-pra-casa/assets/img/carnaval_3.png",
+    description:
+      "Foi presença forte no <b>Carnaval da Sucata, MotoFest e Gonzagäo</b>.",
   },
 ];

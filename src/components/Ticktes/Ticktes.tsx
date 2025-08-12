@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./Ticktes.module.css";
 import { motion } from "motion/react";
 import TermsModal from "../TermsModal/TermsModal";
+import { gtmClickButton } from "@/lib/gtm";
 
 const floatingAssets = [
   {
@@ -104,7 +105,13 @@ const Ticktes = () => {
         </div>
 
         <div style={{ zIndex: 99 }}>
-          <button className={styles.button}>
+          <button
+            className={styles.button}
+            onClick={() => {
+              gtmClickButton("VOLTA PRA CASA", "cta");
+              window.location.href = "https://apostaganha.me/VOLTAR-PRA-CASA";
+            }}
+          >
             RESGATAR MINHAS RODADAS AGORA
           </button>
         </div>

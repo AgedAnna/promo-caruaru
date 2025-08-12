@@ -236,6 +236,35 @@
   right: 0;
 }
 
+.button {
+  background: #fe5500;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  padding: 16px 38px;
+  border-radius: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 24px #fe550088;
+  transition: background 0.2s;
+  font-family: "Exo";
+}
+
+.button:hover {
+  background: #ff7300;
+}
+
+.ctaWrap {
+  position: relative;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(12px, 3vw, 24px) 0;
+  width: 100%;
+  flex-direction: column;
+}
+
 @media (max-width: 700px) {
   .dottedLineWrapper {
     height: 28px;

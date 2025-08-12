@@ -5,6 +5,8 @@ import Image from "next/image";
 import styles from "./History.module.css";
 import { cards } from "@/utils/cards";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
+import { gtmClickButton } from "@/lib/gtm";
+import TermsModal from "../TermsModal/TermsModal";
 
 const img = "/volta-pra-casa/assets/img/traco.png";
 const arrow = "/volta-pra-casa/assets/img/setinha.png";
@@ -165,6 +167,19 @@ const History = () => {
             onClick={() => setCurrent(idx)}
           />
         ))}
+      </div>
+
+      <div className={styles.ctaWrap}>
+        <button
+          className={styles.button}
+          onClick={() => {
+            gtmClickButton("VOLTA PRA CASA", "cta");
+            window.location.href = "https://apostaganha.me/VOLTAR-PRA-CASA";
+          }}
+        >
+          VOLTAR PRA CASA
+        </button>
+        <TermsModal linkColor="#fe5500" />
       </div>
 
       <footer className={styles.footer}>

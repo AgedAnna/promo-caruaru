@@ -2,14 +2,18 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "./TermsModal.module.css";
 
-const TermsModal: React.FC = () => {
+type TermsModalProps = {
+  linkColor?: string;
+};
+
+const TermsModal: React.FC<TermsModalProps> = ({ linkColor }) => {
   const [isOpen, setIsOpen] = useState(false);
   const open = () => setIsOpen(true);
   const close = () => setIsOpen(false);
 
   return (
     <>
-      <a onClick={open} className={styles.link}>
+      <a onClick={open} className={styles.link} style={{ color: linkColor }}>
         CONFIRA O REGULAMENTO.
       </a>
       <AnimatePresence>

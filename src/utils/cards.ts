@@ -1,4 +1,9 @@
-export const cards = [
+export type CardItem = {
+  img: string;
+  description: string;
+};
+
+export const cards: CardItem[] = [
   {
     img: "/volta-pra-casa/assets/img/img_com_moldura.png",
     description:
@@ -48,7 +53,7 @@ export const cards = [
   },
 
   {
-    img: "/volta-pra-casa/assets/img/jogo_1.png",
+    img: "/volta-pra-casa/assets/img/fut.png",
     description:
       "Fortaleceu o nosso futebol: <b>Central e Porto com patrocínio master</b>.",
   },
@@ -78,4 +83,20 @@ export const cards = [
     description:
       "Foi presença forte no <b>Carnaval da Sucata, MotoFest e Gonzagäo</b>.",
   },
+
+  {
+    img: "/volta-pra-casa/assets/img/jogo_1.png",
+    description:
+      "Promoveu o <b>AG Solidário</b>, com pelada de craques e doação de mantimentos.",
+  },
+  {
+    img: "/volta-pra-casa/assets/img/ag_solidario.png",
+    description:
+      "Promoveu o <b>AG Solidário</b>, com pelada de craques e doação de mantimentos.",
+  },
+  // {
+  //   img: "/volta-pra-casa/assets/img/carnaval_3.png",
+  //   description:
+  //     "Promoveu o <b>AG Solidário</b>, com pelada de craques e doação de mantimentos.",
+  // },
 ];

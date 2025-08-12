@@ -29,7 +29,6 @@ export default function Home() {
         </main>
       </div>
 
-      {/* Age gate */}
       {!ageChecked && !isUnderage && (
         <div className={styles.agegate__overlay}>
           <div className={styles.agegate__modal}>

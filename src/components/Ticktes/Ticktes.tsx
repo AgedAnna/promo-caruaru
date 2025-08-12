@@ -115,7 +115,9 @@ const Ticktes = () => {
             RESGATAR MINHAS RODADAS AGORA
           </button>
         </div>
-        <TermsModal />
+        <div style={{ zIndex: 9999, marginBottom: 60 }}>
+          <TermsModal />
+        </div>
       </div>
     </>
   );

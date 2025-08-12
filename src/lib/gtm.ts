@@ -1,10 +1,11 @@
 // lib/gtm.ts
 declare global {
   interface Window {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     dataLayer: Array<Record<string, any>>;
   }
 }
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function pushDL(event: Record<string, any>) {
   if (typeof window === "undefined") return;
   window.dataLayer = window.dataLayer || [];

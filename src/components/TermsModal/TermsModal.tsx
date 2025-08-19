@@ -44,17 +44,17 @@ const TermsModal: React.FC<TermsModalProps> = ({ linkColor }) => {
               <div className={styles.content} style={{ fontFamily: "Exo" }}>
                 <p>
                   <strong>
-                    Faça sua primeira aposta de R$5,00 ou mais no Cassino AG e
-                    receba 50 giros extras no Ratinho Sortudo.
+                    Faça sua primeira aposta de R$5,00 ou mais no Ratinho
+                    Sortudo AG e receba 50 giros extras no Ratinho Sortudo.
                   </strong>
                 </p>
                 <br />
                 <p>
                   <strong>Elegibilidade</strong>
                   <br />
-                  1.1. A promoção intitulada &quot;Joga junto com a AG’’ é
-                  destinada exclusivamente a clientes devidamente cadastrados na
-                  plataforma ApostaGanha.bet.br, desde que cumpram todos os
+                  1.1. A promoção intitulada &quot;Volta pra Casa Caruaru&quot;
+                  é destinada exclusivamente a clientes devidamente cadastrados
+                  na plataforma ApostaGanha.bet.br, desde que cumpram todos os
                   requisitos estabelecidos neste regulamento.
                   <br />
                   1.2. A promoção será válida somente para primeira aposta
@@ -63,28 +63,30 @@ const TermsModal: React.FC<TermsModalProps> = ({ linkColor }) => {
                   1.3. Promoção válida para clientes que estejam de acordo com
                   os termos e condições deste regulamento, e após ter realizado
                   o cadastro pelo link do anúncio.
+                  <br />
+                  1.4. Promoção válida somente para cadastros realizados na
+                  cidade de Caruaru.
                 </p>
                 <br />
                 <p>
                   <strong>Período</strong>
                   <br />
                   2.1. A promoção estará em vigor no seguinte período das
-                  12h00min do dia 05/08 até às 23h59min do dia 31/08 (horário de
+                  12h00min do dia 21/08 até às 23h59min do dia 31/09 (horário de
                   Brasília).
                   <br />
                   <br />
-                  Válido somente para clientes que se cadastrarem através do
-                  link da promoção e validarem a conta durante o período da
-                  oferta.
+                  Válido somente para clientes que se cadastrar através do link
+                  da promoção e validarem a conta durante o período da oferta.
                   <br />
                   ● A primeira aposta após a validação deve ser exclusivamente
                   no Cassino e no Ratinho Sortudo.
                   <br />
-                  Caso o cliente aposte em quaisquer outros jogos ou esportes
+                  Caso o cliente aposte em qualquer outros jogos ou esportes
                   antes, não estará elegível.
                   <br />
-                  ● Aposte R$5,00 ou mais e receba 50 giros extras no jogo Touro
-                  Sortudo.
+                  ● Aposte R$5,00 ou mais e receba 50 giros extras no jogo
+                  Ratinho Sortudo.
                   <br />
                   ● O pagamento será realizado em até 10 minutos após cumprir o
                   requisito mínimo de valor apostado no jogo selecionado.
@@ -106,9 +108,10 @@ const TermsModal: React.FC<TermsModalProps> = ({ linkColor }) => {
                   <strong>Regras da premiação</strong>
                   <br />
                   4.1. O cliente receberá 50 giros extras no jogo selecionado
-                  após realizar R$5,00 ou mais em apostas no jogo Touro Sortudo.
+                  após realizar R$5,00 ou mais em apostas no jogo Ratinho
+                  Sortudo.
                   <br />
-                  4.2. Para ser elegível aos giros extras, o jogador deve
+                  4.2. Para ser elegível ao giros extras, o jogador deve
                   realizar sua primeira aposta no Ratinho Sortudo durante o
                   período estabelecido.
                   <br />
@@ -155,7 +158,7 @@ const TermsModal: React.FC<TermsModalProps> = ({ linkColor }) => {
                   6.2. Todos os termos e condições do ApostaGanha.bet.br são
                   aplicáveis.
                   <br />
-                  6.3. Qualquer mau funcionamento anula todos os pagamentos e
+                  6.3. Qualquer mal funcionamento anula todos os pagamentos e
                   jogadas.
                   <br />
                   6.4. Em caso de dúvidas, os participantes devem contatar o

@@ -109,7 +109,9 @@ const Ticktes = () => {
             className={styles.button}
             onClick={() => {
               gtmClickButton("VOLTA PRA CASA", "cta");
-              window.location.href = "https://apostaganha.me/VOLTAR-PRA-CASA";
+              const currentParams = window.location.search;
+              window.location.href =
+                "https://apostaganha.bet.br/auth/cadastro" + currentParams;
             }}
           >
             RESGATAR MINHAS RODADAS AGORA
